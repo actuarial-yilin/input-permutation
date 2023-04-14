@@ -75,6 +75,15 @@ input_['CNTRY'].append('')
 #Add Lead Customer Age
 input_['AGE']=['24', '38', '51', '55', '60', '65', '70', '75', '80', '90']
 
+#please apply one of the two from below
+#1
+#set to generate the annual multiple trips only
+input_['ASTRIP']=['A']
+
+#2
+#set to generate the single trip only
+input_['ASTRIP']=['S']
+
 #Add Trip Duration
 input_['DURATION']=['3', '8', '14', '30', '45', '365']
 
