@@ -73,16 +73,13 @@ for k in range(0,len(selection)):
 input_['CNTRY'].append('')
 
 #Add Lead Customer Age
-input_['AGE']=['24', '38', '51', '55', '60', '65', '70', '75', '80', '90']
+input_['AGE']=['24', '38', '51', '55', '60']
 
-#please apply one of the two from below
-#1
-#set to generate the annual multiple trips only
+#set to generate annual multiple trips only
 input_['ASTRIP']=['A']
 
-#2
-#set to generate the single trip only
-input_['ASTRIP']=['S']
+#set to generate proposal forms with no cruise
+input_['CRUCHK']=['N']
 
 #Add Trip Duration
 input_['DURATION']=['3', '8', '14', '30', '45', '365']
@@ -295,7 +292,7 @@ for k in range(0,len(df)):
 
 #Unfit to travel or Terminal Prognosis results in no prices being offered
 df['LWBQE01']='N'
-df['LWBQE02']=mwl_list
+df['LWBQE02']='N'
 df['LWBQE03']='N'
 
 #Medical Conditions
@@ -315,7 +312,7 @@ for k in range(0,len(df)):
         med_con_list.append(choice(med_conditions))
     else:
         med_con_list.append('')
-df['MED_CON']=med_con_list
+df['MED_CON']="
 
 print('Medical Conditions Data Created')
 
