@@ -312,7 +312,7 @@ for k in range(0,len(df)):
         med_con_list.append(choice(med_conditions))
     else:
         med_con_list.append('')
-df['MED_CON']="
+df['MED_CON']=''
 
 print('Medical Conditions Data Created')
 
